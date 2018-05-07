@@ -1,0 +1,24 @@
+{
+  "name": "note.api",
+  "version": "1.0.0",
+  "description": "note api in restful manner",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "note",
+    "api"
+  ],
+  "author": "Kai Sackl",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "sqlite3": "^4.0.0"
+  }
+}
