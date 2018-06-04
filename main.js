@@ -71,6 +71,7 @@ function putNoteByID(req, res){
 	var note_text = req.body.note_text;
 	if (note_text) {
 		db.serialize(() => {
+			// Insert Into or Replace statt Update
 			db.run("UPDATE Note SET note_text = '"+note_text+"' WHERE ID = '"+id+"'", function(err){
 				if (err) {
 					log(err);
